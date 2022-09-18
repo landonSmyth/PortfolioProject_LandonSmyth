@@ -1,0 +1,64 @@
+body {
+    background-color: #274957e7;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#whole_page {
+    width: 100%;
+    height: 900px;
+}
+
+#nav-banner {
+    background: gray;
+    width: 1900px;
+    height: 110px;
+}
+
+#nav-banner li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #010326;
+}
+
+#nav-banner li {
+    list-style: none;
+    display: block;
+    margin: 40px 5px;
+    font-size: 20px; 
+    float: left;
+}
+
+#nav-banner li a:hover {
+    background-color: #22F2B7;
+    border-radius: 20px;
+}
+
+#nav-banner img {
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+}
+
+#middle {
+   background-color: aqua; 
+}
+
+#middle img {
+    margin: 60px 500px;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+
+/* Color Theme Swatches in Hex */
+.Under-the-Sea-1-hex { color: #010326; }
+.Under-the-Sea-2-hex { color: #074259; }
+.Under-the-Sea-3-hex { color: #22F2B7; }
+.Under-the-Sea-4-hex { color: #65F5E4; }
+.Under-the-Sea-5-hex { color: #EAF9F5; }
+
+
+
