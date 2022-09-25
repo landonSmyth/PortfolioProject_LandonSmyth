@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+		<title>Contact - Landon Smyth Portfolio</title>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div id="whole_page">
+			<div id="nav-banner">
+				<img src="/Media/Kermit-Photo.jpg" width="100px" height="90px" alt="Kermit in a suit"/>
+				<ul>
+					<li> <a href="index.html">Homepage</a></li>
+					<li> <a href="about_me.html" target="_blank">About Me</a></li>
+					<li> <a href="projects.html" target="_blank">Projects</a></li>
+					<li> <a href="contact.html" target="_blank">Contact Me</a></li>
+				</ul>
+			</div>
+            <div class="box">
+                <form id="form" action=mailto:landon.smyth@ontariotechu.net ?subjet=Contact method="post">
+                    <p>
+                        <h1>Contact Me</h1>
+                        <input type="email" name="email" size="30" placeholder="Enter your email" required/><br/>
+                        <input type="text" name="name" size="30" placeholder="Enter your name" required/><br/>
+                        <!--Input type "tel" specifies that the input type is a telephone number and must follow the specified pattern-->
+                        <input type="tel" name="Cell#" pattern="[0-9]{3}[0-9]{3}[0-9]{3}" size="30" 
+                        placeholder="Enter your Cell Number" required/><br/>
+                        <textarea size="40" placeholder="Comments (if any)" id="comments" cols="35" rows="5"></textarea><br/>
+                        <label for="Better_pet">Which pet is better?</label>
+                        <select name="Better_pet">
+                            <option value="Cat">Cat</option>
+                            <option value="Dog">Dog</option>
+                        </select><br/>
+                        <input type="submit" value="Submit" id="submit"/>
+                    </p>
+                </form>
+            </div>
+			<div id="footer">
+                <p>Site by Landon Smyth</p>
+			</div>
+		</div>
+    </body>
+</html>

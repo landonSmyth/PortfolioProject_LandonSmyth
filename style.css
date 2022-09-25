@@ -1,0 +1,215 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500&display=swap');
+
+/*Elements the same for all pages*/
+
+body {
+    background-color: #274957e7;
+    font-family: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#whole_page {
+    width: 100%;
+}
+
+#nav-banner {
+    background: rgb(60, 56, 56);
+    width: 100%;
+    height: 110px;
+    border-radius: 30px;
+}
+
+#nav-banner li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #010326;
+}
+
+#nav-banner li {
+    list-style: none;
+    display: block;
+    margin: 40px 5px;
+    font-size: 20px; 
+    float: left;
+}
+
+#nav-banner li a:hover {
+    background-color: #f22222;
+    border-radius: 20px;
+}
+
+#nav-banner img {
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 90px;
+}
+
+#footer {
+    position: absolute; /*Position abosolte and the top/bottom cause the footer to be 92% away from the top and 0px
+    away from the bottom. This causes the footer element to always be stuck at the bottom of the pages*/
+    top: 92%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(12, 20, 27);
+    border-radius: 15px;
+}
+
+#footer p {
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Elements for homepage*/ 
+
+#middle {
+   background-color: rgba(7, 75, 75, 0.863);
+   width: 100%;
+   height: auto;
+}
+
+#middle img {
+    width: auto;
+    height: auto;
+    display: block;
+    border-radius: 50%;
+    margin: auto;
+    border: 5px solid black;
+}
+
+#middle h1,h2 {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+
+/*Elements for About Me page*/
+
+#middle_image {
+    width: 100%;
+    background-color: #010326;
+}
+
+#middle_image img {
+    width: 300px;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+}
+
+#left-column {
+    width: 50%;
+    height: 356px;
+    float: left;
+    background-color: #000dff;
+}
+
+#left-column p,h3{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    display: block;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#right-column {
+    width: 50%;
+    float: right;
+    background-color: #f22222;
+}
+
+#right-column video{
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px black;
+    background-color: #010326;
+}
+
+.clear {
+    clear: both;
+}
+
+/*Elements for Projects Page*/
+
+#projects_info {
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
+}
+
+#projects_info h1{
+    text-align: center;
+    margin: 40px;
+}
+
+#projects_info p {
+    text-align: center;
+}
+
+/*Elements for Contact page */
+
+.box {
+    width: 700px;
+    height: 500px;
+    background-color: #ff6600;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 60px;
+    
+}
+
+#form {
+    text-align: center;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+.box input, textarea {
+    padding: 10px;
+    border-color: #010326;
+    margin: 15px auto 0px auto;
+    border-radius: 8px;
+}
+
+.box h1 {
+    padding: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+#submit {
+    margin: 80px;
+    width: 100px;
+}
+
+#submit:hover{
+    background: linear-gradient(to bottom, red 0%,yellow 100%); 
+}
+
+/* Color Theme Swatches in Hex */
+.Under-the-Sea-1-hex { color: #010326; }
+.Under-the-Sea-2-hex { color: #074259; }
+.Under-the-Sea-3-hex { color: #22F2B7; }
+.Under-the-Sea-4-hex { color: #65F5E4; }
+.Under-the-Sea-5-hex { color: #EAF9F5; }
+
+
+
