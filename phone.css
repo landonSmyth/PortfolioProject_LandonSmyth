@@ -5,7 +5,7 @@
 /*Elements the same for all pages*/
 
 body {
-    background-color: #274957e7;
+    background-color: #626262;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -18,20 +18,20 @@ body {
     width: 100%;
 }
 
-#nav-banner {
-    background: rgb(60, 56, 56);
+nav {
+    background: #233C4C;
     width: 100%;
     height: 110px;
     border-radius: 30px;
 }
 
-#nav-banner li a{
+nav li a{
     padding: 10px 20px;
     text-decoration: none;
-    color: #010326;
+    color: black;
 }
 
-#nav-banner li {
+nav li {
     list-style: none;
     display: block;
     margin: 40px 5px;
@@ -39,12 +39,12 @@ body {
     float: left;
 }
 
-#nav-banner li a:hover {
+nav li a:hover {
     background-color: #f22222;
     border-radius: 20px;
 }
 
-#nav-banner img {
+nav img {
     border-radius: 50%;
     float: left;
     margin: 10px;
@@ -52,18 +52,17 @@ body {
     height: 90px;
 }
 
-#footer {
+footer {
     position: absolute; /*Position abosolte and the top/bottom cause the footer to be 92% away from the top and 0px
     away from the bottom. This causes the footer element to always be stuck at the bottom of the pages*/
     top: 92%;
     bottom: 0;
     right: 0;
     left: 0;
-    background-color: rgb(12, 20, 27);
-    border-radius: 15px;
+    background-color: #000000;
 }
 
-#footer p {
+footer p {
     color: gray;
     text-align: center;
     margin-top: 20px;
@@ -71,13 +70,14 @@ body {
 
 /*Elements for homepage*/ 
 
-#middle {
-   background-color: rgba(7, 75, 75, 0.863);
+article {
+   
    width: 100%;
-   height: auto;
+   position: absolute;
+   top: 20%;
 }
 
-#middle img {
+article img {
     width: auto;
     height: auto;
     display: block;
@@ -86,7 +86,7 @@ body {
     border: 5px solid black;
 }
 
-#middle h1,h2 {
+article h1,h2 {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     padding: 10px;
@@ -96,7 +96,6 @@ body {
 
 #middle_image {
     width: 100%;
-    background-color: #010326;
 }
 
 #middle_image img {
@@ -105,14 +104,15 @@ body {
     margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10%;
+    border-radius: 50%;
+    border: 4px solid black;
 }
 
 #left-column {
     width: 50%;
-    height: 356px;
+    height: auto;
     float: left;
-    background-color: #000dff;
+    /*background-color: #000dff;*/
 }
 
 #left-column p,h3{
@@ -123,21 +123,24 @@ body {
     font-size: 30px;
     padding-left: 15px;
     padding-right: 15px;
+    margin: 15px;
 }
 
 #right-column {
     width: 50%;
     float: right;
-    background-color: #f22222;
+    /*background-color: #f22222;*/
 }
 
-#right-column video{
+video {
     width: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border: 2px black;
+    border: 4px solid black;   
+    border-radius: 10px;
     background-color: #010326;
+    overflow: auto;
 }
 
 .clear {
@@ -149,12 +152,16 @@ body {
 #projects_info {
     font-family: 'Poppins', sans-serif;
     font-size: larger;
-}
-
-#projects_info h1{
     text-align: center;
     margin: 40px;
 }
+
+header {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 40px;    
+}
+
 
 #projects_info p {
     text-align: center;
@@ -163,15 +170,14 @@ body {
 /*Elements for Contact page */
 
 .box {
-    width: 700px;
+    width: 40%;
     height: 500px;
-    background-color: #ff6600;
+    background-color: #70abc283;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
     margin: auto;
-    margin-top: 60px;
-    
+    margin-top: 20px;
 }
 
 #form {
@@ -196,20 +202,17 @@ textarea {
 }
 
 #submit {
-    margin: 80px;
+   
     width: 100px;
 }
 
 #submit:hover{
-    background: linear-gradient(to bottom, red 0%,yellow 100%); 
+    background: linear-gradient(to bottom, blue 0%,#223841 100%); 
 }
 
 /* Color Theme Swatches in Hex */
-.Under-the-Sea-1-hex { color: #010326; }
-.Under-the-Sea-2-hex { color: #074259; }
-.Under-the-Sea-3-hex { color: #22F2B7; }
-.Under-the-Sea-4-hex { color: #65F5E4; }
-.Under-the-Sea-5-hex { color: #EAF9F5; }
-
-
-
+.Reimbursement-and-Medicare-Cost-Reporting-Boot-Camp-for-Critical-Access-Hospitals-INSTRUCTORS-B-1-hex { color: #233C4C; }
+.Reimbursement-and-Medicare-Cost-Reporting-Boot-Camp-for-Critical-Access-Hospitals-INSTRUCTORS-B-2-hex { color: #223841; }
+.Reimbursement-and-Medicare-Cost-Reporting-Boot-Camp-for-Critical-Access-Hospitals-INSTRUCTORS-B-3-hex { color: #F4F4F4; }
+.Reimbursement-and-Medicare-Cost-Reporting-Boot-Camp-for-Critical-Access-Hospitals-INSTRUCTORS-B-4-hex { color: #A1A6A8; }
+.Reimbursement-and-Medicare-Cost-Reporting-Boot-Camp-for-Critical-Access-Hospitals-INSTRUCTORS-B-5-hex { color: #060E12; }
