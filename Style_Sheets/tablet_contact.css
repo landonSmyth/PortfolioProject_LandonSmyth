@@ -5,11 +5,11 @@
 /*Elements the same for all pages*/
 
 body {
-    background-color: #ba6600b8;
+    background-color: #3f0aff;
     font-family: 'Oswald', sans-serif;
 }
 
-* {
+* { /*The * applies to all pages, and the below property/values remove the default border from all pages*/
     margin: 0px;
     padding: 0px;
 }
@@ -19,14 +19,15 @@ body {
 }
 
 nav {
-    background: #1587b8;
+    background: #37C400;
     width: 100%;
     height: 110px;
     border-radius: 30px;
+        
 }
 
 nav li a{
-    padding: 5px 10px;
+    padding: 10px 20px;
     text-decoration: none;
     color: black;
     box-shadow: 5px 5px 3px black;
@@ -37,7 +38,7 @@ nav li a{
 nav li {
     list-style: none;
     display: block;
-    margin: 10px 10px;
+    margin: 40px 5px;
     font-size: 20px; 
     float: left;
 }
@@ -46,12 +47,11 @@ nav img {
     border-radius: 50%;
     float: left;
     margin: 10px;
-    width: 70px;
-    height: 60px;
-    margin-top: 25px;
+    width: 100px;
+    height: 90px;
 }
 
-footer {
+#footerC {
     position: absolute; /*Position abosolte and the top/bottom cause the footer to be 92% away from the top and 0px
     away from the bottom. This causes the footer element to always be stuck at the bottom of the pages*/
     top: 92%;
@@ -61,8 +61,8 @@ footer {
     background-color: #000000;
 }
 
-footer p {
-    color: #009960;
+#footerC p {
+    color: gray;
     text-align: center;
     margin-top: 20px;
 }
@@ -70,14 +70,14 @@ footer p {
 /*Elements specific to the Contact page*/
 
 .box {
-    width: 80%;
-    height: 400px;
+    width: 60%;
+    height: 500px;
     background-color: #00b457;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
     margin: auto;
-    margin-top: 10%;
+    margin-top: 50px;
 }
 
 #form {
@@ -87,18 +87,18 @@ footer p {
 }
 
 #form label {
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .box input, textarea {
-    padding: 5px;
+    padding: 10px;
     border-color: #010326;
     margin: 15px auto 0px auto;
     border-radius: 8px;
 }
 
 .box h1 {
-    padding: 10px;
+    padding: 30px;
     font-size: 40px;
 }
 

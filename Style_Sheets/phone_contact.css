@@ -2,12 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500&display=swap');
 
+/*Elements the same for all pages*/
+
 body {
-    background-color: #626262;
+    background-color: #ba6600b8;
     font-family: 'Oswald', sans-serif;
 }
 
-* {
+* { /*The * applies to all pages, and the below property/values remove the default border from all pages*/
     margin: 0px;
     padding: 0px;
 }
@@ -17,37 +19,36 @@ body {
 }
 
 nav {
-    background: #233C4C;
+    background: #1587b8;
     width: 100%;
     height: 110px;
     border-radius: 30px;
 }
 
 nav li a{
-    padding: 10px 20px;
+    padding: 5px 10px;
     text-decoration: none;
     color: black;
+    box-shadow: 5px 5px 3px black;
+    border-radius: 5px;
+    background-color: #24670a62;
 }
 
 nav li {
     list-style: none;
     display: block;
-    margin: 40px 5px;
+    margin: 10px 10px;
     font-size: 20px; 
     float: left;
-}
-
-nav li a:hover {
-    background-color: #f22222;
-    border-radius: 20px;
 }
 
 nav img {
     border-radius: 50%;
     float: left;
     margin: 10px;
-    width: 100px;
-    height: 90px;
+    width: 70px;
+    height: 60px;
+    margin-top: 25px;
 }
 
 footer {
@@ -61,54 +62,50 @@ footer {
 }
 
 footer p {
-    color: gray;
+    color: #009960;
     text-align: center;
     margin-top: 20px;
 }
 
-#middle_image {
-    width: 100%;
-}
+/*Elements specific to the Contact page*/
 
-#middle_image img {
-    width: 300px;
-    display: block;
-    margin-top: 10px;
+.box {
+    width: 80%;
+    height: 400px;
+    background-color: #00b457;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 50%;
-    border: 4px solid black;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 10%;
 }
 
-#left-column {
-    width: 50%;
-    height: auto;
-    float: left;
-}
-
-#left-column p,h3{
+#form {
     text-align: center;
-    position: relative;
-    top: 30%;
     display: block;
-    font-size: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 15px;
+    margin: 0px auto 0px auto;
 }
 
-#right-column {
-    width: 50%;
-    float: right;
+#form label {
+    font-size: 15px;
 }
 
-video {
-    width: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 4px solid black;   
-    border-radius: 10px;
-    background-color: #010326;
-    overflow: auto;
+.box input, textarea {
+    padding: 5px;
+    border-color: #010326;
+    margin: 15px auto 0px auto;
+    border-radius: 8px;
+}
+
+.box h1 {
+    padding: 10px;
+    font-size: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+#submit {
+    width: 100px;
 }

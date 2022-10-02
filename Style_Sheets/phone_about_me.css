@@ -5,11 +5,11 @@
 /*Elements the same for all pages*/
 
 body {
-    background-color: #626262;
+    background-color: #ba6600b8;
     font-family: 'Oswald', sans-serif;
 }
 
-* {
+* { /*The * applies to all pages, and the below property/values remove the default border from all pages*/
     margin: 0px;
     padding: 0px;
 }
@@ -19,37 +19,36 @@ body {
 }
 
 nav {
-    background: #233C4C;
+    background: #1587b8;
     width: 100%;
     height: 110px;
     border-radius: 30px;
 }
 
 nav li a{
-    padding: 10px 20px;
+    padding: 5px 10px;
     text-decoration: none;
     color: black;
+    box-shadow: 5px 5px 3px black;
+    border-radius: 5px;
+    background-color: #24670a62;
 }
 
 nav li {
     list-style: none;
     display: block;
-    margin: 40px 5px;
+    margin: 10px 10px;
     font-size: 20px; 
     float: left;
-}
-
-nav li a:hover {
-    background-color: #f22222;
-    border-radius: 20px;
 }
 
 nav img {
     border-radius: 50%;
     float: left;
     margin: 10px;
-    width: 100px;
-    height: 90px;
+    width: 70px;
+    height: 60px;
+    margin-top: 25px;
 }
 
 footer {
@@ -63,30 +62,58 @@ footer {
 }
 
 footer p {
-    color: gray;
+    color: #009960;
     text-align: center;
     margin-top: 20px;
 }
 
-/*Elements for homepage*/ 
+/*Elements specific to the About Me page*/
 
-article {
-   width: 100%;
-   position: absolute;
-   top: 20%;
+#middle_image {
+    width: 100%;
 }
 
-article img {
-    width: auto;
-    height: auto;
+#middle_image img {
+    width: 30%;
     display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 50%;
-    margin: auto;
-    border: 5px solid black;
+    border: 4px solid black;
 }
 
-article h1,h2 {
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+#left-column {
+    width: 80%;
+    height: auto;
+    float: none;
+    margin: auto;
+}
+
+#left-column p,h3{
     text-align: center;
-    padding: 10px;
+    position: relative;
+    top: 30%;
+    display: block;
+    font-size: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
+}
+
+#right-column {
+    width: 100%;
+    float: none;
+}
+
+video {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;   
+    border-radius: 10px;
+    background-color: #010326;
+    overflow: auto;
+    margin-top: 20px;
 }
