@@ -1,0 +1,111 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500&display=swap');
+
+/*Elements the same for all pages*/
+
+body {
+    background-color: #ba6600b8;
+    font-family: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#whole_page {
+    width: 100%;
+}
+
+nav {
+    background: #1587b8;
+    width: 100%;
+    height: 110px;
+    border-radius: 30px;
+}
+
+nav li a{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 3px black;
+    border-radius: 5px;
+    background-color: #24670a62;
+}
+
+nav li {
+    list-style: none;
+    display: block;
+    margin: 10px 10px;
+    font-size: 20px; 
+    float: left;
+}
+
+nav img {
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    width: 70px;
+    height: 60px;
+    margin-top: 25px;
+}
+
+footer {
+    position: absolute; /*Position abosolte and the top/bottom cause the footer to be 92% away from the top and 0px
+    away from the bottom. This causes the footer element to always be stuck at the bottom of the pages*/
+    top: 92%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+footer p {
+    color: #009960;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Elements specific to the Contact page*/
+
+.box {
+    width: 80%;
+    height: 400px;
+    background-color: #00b457;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+#form {
+    text-align: center;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+#form label {
+    font-size: 15px;
+}
+
+.box input, textarea {
+    padding: 5px;
+    border-color: #010326;
+    margin: 15px auto 0px auto;
+    border-radius: 8px;
+}
+
+.box h1 {
+    padding: 10px;
+    font-size: 40px;
+}
+
+textarea {
+    resize: none;
+}
+
+#submit {
+    width: 100px;
+}

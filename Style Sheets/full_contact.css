@@ -1,0 +1,112 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500&display=swap');
+
+/*Elements the same for all pages*/
+body {
+    background-color: #626262;
+    font-family: 'Oswald', sans-serif;
+}
+
+* { /*The * applies to all pages, and the below property/values remove the default border from all pages*/
+    margin: 0px;
+    padding: 0px;
+}
+
+#whole_page {
+    width: 100%;
+}
+
+nav {
+    background: #233C4C;
+    width: 100%;
+    height: 110px;
+    border-radius: 30px;
+}
+
+nav li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+nav li {
+    list-style: none;
+    display: block;
+    margin: 40px 5px;
+    font-size: 20px; 
+    float: left;
+}
+
+nav li a:hover {
+    background-color: #f22222;
+    border-radius: 20px;
+}
+
+nav img {
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 90px;
+}
+
+footer {
+    position: absolute; /*Position abosolte and the top/bottom cause the footer to be 92% away from the top and 0px
+    away from the bottom. This causes the footer element to always be stuck at the bottom of the pages*/
+    top: 92%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+footer p {
+    color: gray;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/*Elements specific to the Contact page*/
+
+.box {
+    width: 40%;
+    height: 500px;
+    background-color: #70abc283;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#form {
+    text-align: center;
+    display: block;
+    margin: 0px auto 0px auto;
+}
+
+.box input, textarea {
+    padding: 10px;
+    border-color: #010326;
+    margin: 15px auto 0px auto;
+    border-radius: 8px;
+}
+
+.box h1 {
+    padding: 30px;
+}
+
+textarea {
+    resize: none;
+}
+
+#submit {
+    width: 100px;
+}
+
+#submit:hover{
+    background: linear-gradient(to bottom, blue 0%,#223841 100%); 
+}
+
+

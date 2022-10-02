@@ -1,0 +1,117 @@
+@charset "UTF-8"; 
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500&display=swap');
+
+/*Elements the same for all pages*/
+
+body {
+    background-color: #3f0aff;
+    font-family: 'Oswald', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+#whole_page {
+    width: 100%;
+}
+
+nav {
+    background: #37C400;
+    width: 100%;
+    height: 110px;
+    border-radius: 30px;
+        
+}
+
+nav li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+    box-shadow: 5px 5px 3px black;
+    border-radius: 5px;
+    background-color: #24670a62;
+}
+
+nav li {
+    list-style: none;
+    display: block;
+    margin: 40px 5px;
+    font-size: 20px; 
+    float: left;
+}
+
+nav img {
+    border-radius: 50%;
+    float: left;
+    margin: 10px;
+    width: 100px;
+    height: 90px;
+}
+
+#footerAM {
+    position: absolute; /*Position abosolte and the top/bottom cause the footer to be 92% away from the top and 0px
+    away from the bottom. This causes the footer element to always be stuck at the bottom of the pages*/
+    top: 92%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: #000000;
+}
+
+#footerAM p {
+    color: #009960;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#middle_image {
+    width: 100%;
+}
+
+#middle_image img {
+    width: 30%;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    border: 4px solid black;
+}
+
+#left-column {
+    width: 80%;
+    height: auto;
+    float: none;
+    margin: auto;
+}
+
+#left-column p,h3{
+    text-align: center;
+    position: relative;
+    top: 30%;
+    display: block;
+    font-size: 23px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
+}
+
+#right-column {
+    width: 100%;
+    float: none;
+}
+
+video {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;   
+    border-radius: 10px;
+    background-color: #010326;
+    overflow: auto;
+    margin-top: 20px;
+}

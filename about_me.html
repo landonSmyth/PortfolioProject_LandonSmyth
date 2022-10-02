@@ -5,42 +5,45 @@
 		<title>About Me - Landon Smyth Portfolio</title>
 		<meta name="viewport" content="width=device-width"> 
     	<!-- desktop / 960px+ style sheet-->
-    	<link href="full.css" rel="stylesheet" type="text/css" media="only screen and 
+    	<link href="/Style Sheets/full_about_me.css" rel="stylesheet" type="text/css" media="only screen and 
 		(min-width:960px)"> 
     	<!-- tablet style sheet--> 
-    	<link href="tablet.css" rel="stylesheet" type="text/css" media="only screen 
+    	<link href="/Style Sheets/tablet_about_me.css" rel="stylesheet" type="text/css" media="only screen 
 		and (min-width:481px) and (max-width:960px)"> 
     	<!-- mobile phone style sheet--> 
-    	<link href="phone.css" rel="stylesheet" type="text/css" media="only screen 
+    	<link href="/Style Sheets/phone_about_me.css" rel="stylesheet" type="text/css" media="only screen 
 		and (max-width:480px)">
     </head>
     <body>
         <div id="whole_page">
-			<nav>
-				<img src="/Media/Kermit-Photo.jpg" width="100px" height="90px" alt="Kermit in a suit"/>
-				<ul>
-					<li> <a href="index.html"><b>Homepage</b></a></li>
-					<li> <a href="about_me.html"><b>About Me</b></a></li>
-					<li> <a href="projects.html"><b>Projects</b></a></li>
-					<li> <a href="contact.html"><b>Contact Me</b></a></li>
-				</ul>
-			</nav>
-			<div id="middle_image">
-				<img src="/Media/Kermit-Suit_2.jpg" alt="Kermit in a suit"/>
-			</div>
-			<div id="left-column">
-				<h3>About Me:</h3>
-				<p>My name is Landon Smyth. I am a current Networking and IT Security student at Ontario Tech University. 
-					In my free time I enjoy video games, movies, Rubik's cubes and making Videos about the games I play. 
-				</p>
-			</div>
-			<div id="right-column">
-				<video controls muted poster="/Media/Video_Poster.JPG" preload="auto">
-					<source src="/Media/Kermit - Its not easy being green.mp4" type="video/mp4">
-				</video>
-			</div>
-			<div class="clear"></div>
-			<footer>
+			<article>
+				<nav>
+					<img src="/Media/Kermit-Photo.jpg" width="100px" height="90px" alt="Kermit in a suit"/>
+					<ul>
+						<li> <a href="index.html"><b>Homepage</b></a></li>
+						<li> <a href="about_me.html"><b>About Me</b></a></li>
+						<li> <a href="projects.html"><b>Projects</b></a></li>
+						<li> <a href="contact.html"><b>Contact Me</b></a></li>
+					</ul>
+				</nav>
+				<section id="middle_image">
+					<img src="/Media/Kermit-Suit_2.jpg" alt="Kermit in a suit"/>
+				</section>
+				<section id="right-column">
+					<video controls muted poster="/Media/Video_Poster.JPG">
+						<source src="/Media/Kermit - Its not easy being green.mp4" type="video/mp4">
+						<source src="/Media/Kermit-Its-not-easy-being-green.ogv" type="video/ogg">
+					</video>
+				</section>
+				<section id="left-column">
+					<h3>About Me:</h3>
+					<p>My name is Landon Smyth. I am a current Networking and IT Security student at Ontario Tech University. 
+						In my free time I enjoy video games, movies, Rubik's cubes and Badminton. 
+					</p>
+				</section>
+				<div class="clear"></div>
+			</article>
+			<footer id="footerAM">
 				<p>Site by Landon Smyth</p>
 			</footer>
 		</div>
