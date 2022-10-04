@@ -2,14 +2,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@500&display=swap');
 
-/*Elements the same for all pages*/
-
 body {
-    background-color: #3f0aff;
+    background-color: #626262;
     font-family: 'Oswald', sans-serif;
 }
 
-* {
+* { /*The * applies to all pages, and the below property/values remove the default border from all pages*/
     margin: 0px;
     padding: 0px;
 }
@@ -19,20 +17,16 @@ body {
 }
 
 nav {
-    background: #37C400;
+    background: #233C4C;
     width: 100%;
     height: 110px;
     border-radius: 30px;
-        
 }
 
 nav li a{
     padding: 10px 20px;
     text-decoration: none;
     color: black;
-    box-shadow: 5px 5px 3px black;
-    border-radius: 5px;
-    background-color: #24670a62;
 }
 
 nav li {
@@ -43,6 +37,11 @@ nav li {
     float: left;
 }
 
+nav li a:hover {
+    background-color: #f22222;
+    border-radius: 20px;
+}
+
 nav img {
     border-radius: 50%;
     float: left;
@@ -51,7 +50,7 @@ nav img {
     height: 90px;
 }
 
-#footerC {
+footer {
     position: absolute; /*Position abosolte and the top/bottom cause the footer to be 92% away from the top and 0px
     away from the bottom. This causes the footer element to always be stuck at the bottom of the pages*/
     top: 92%;
@@ -61,51 +60,57 @@ nav img {
     background-color: #000000;
 }
 
-#footerC p {
+footer p {
     color: gray;
     text-align: center;
     margin-top: 20px;
 }
 
-/*Elements specific to the Contact page*/
+/*Elements specific to the About Me page*/
 
-.box {
-    width: 60%;
-    height: 500px;
-    background-color: #00b457;
+#middle_image {
+    width: 100%;
+}
+
+#middle_image img {
+    width: 300px;
+    display: block;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
-    border-radius: 10%;
-    margin: auto;
-    margin-top: 50px;
+    border-radius: 50%;
+    border: 4px solid black;
 }
 
-#form {
+#left-column {
+    width: 50%;
+    height: auto;
+    float: left;
+}
+
+#left-column p,h3{
     text-align: center;
+    position: relative;
+    top: 30%;
     display: block;
-    margin: 0px auto 0px auto;
+    font-size: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 15px;
 }
 
-#form label {
-    font-size: 20px;
+#right-column {
+    width: 50%;
+    float: right;
 }
 
-.box input, textarea {
-    padding: 10px;
-    border-color: #010326;
-    margin: 15px auto 0px auto;
-    border-radius: 8px;
-}
-
-.box h1 {
-    padding: 30px;
-    font-size: 40px;
-}
-
-textarea {
-    resize: none;
-}
-
-#submit {
-    width: 100px;
+video {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 4px solid black;   
+    border-radius: 10px;
+    background-color: #010326;
+    overflow: auto;
 }
