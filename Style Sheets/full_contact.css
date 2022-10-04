@@ -72,7 +72,8 @@ footer p {
 .box {
     width: 40%;
     height: 500px;
-    background-color: #70abc283;
+    /*Angled diagonal gradient*/ 
+    background: linear-gradient(35deg, #1e61a8 10%, #1adbcadb 100%);
     margin-left: auto;
     margin-right: auto;
     border-radius: 10%;
@@ -106,7 +107,7 @@ textarea {
 }
 
 #submit:hover{
-    background: linear-gradient(to bottom, blue 0%,#223841 100%); 
+    background: linear-gradient(to bottom, blue 0%,#22384134 100%); 
 }
 
 
